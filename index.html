@@ -14,7 +14,7 @@
     <script>
         async function fetchReviews() {
             try {
-                const response = await fetch('http://127.0.0.1:9010/reviews/');
+                const response = await fetch('http://45.153.189.82:9010/reviews/');
                 const data = await response.json();
                 renderReviews(data.results);
             } catch (error) {
